@@ -12,16 +12,19 @@ public class Prices {
         this.healthyBurgerPrice = healthyBurgerPrice;
         this.deluxeBurgerPrice = deluxeBurgerPrice;
     }
-
-    public double getBaseBurgerPrice() {
-        return baseBurgerPrice;
+    public String dollarSign() {
+        String dollarSign = " $";
+        return dollarSign;
+    }
+    public String getBaseBurgerPrice() {
+        return baseBurgerPrice + dollarSign();
     }
 
-    public double getHealthyBurgerPrice() {
-        return healthyBurgerPrice;
+    public String getHealthyBurgerPrice() {
+        return healthyBurgerPrice + dollarSign();
     }
 
-    public double getDeluxeBurgerPrice() {
-        return deluxeBurgerPrice;
+    public String getDeluxeBurgerPrice() {
+        return deluxeBurgerPrice + dollarSign();
     }
 }
